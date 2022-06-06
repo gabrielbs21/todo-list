@@ -22,13 +22,7 @@ interface TasksContextData {
 const TasksContext = createContext<TasksContextData>({} as TasksContextData);
 
 export function TasksProvider({ children }: TasksProviderProps) {
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: Date.now(),
-      content: "Apenas para testes!",
-      completed: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   function createTask(taskInput: TaskInput) {
     const task = { ...taskInput, id: Date.now() };
