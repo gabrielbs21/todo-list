@@ -1,0 +1,68 @@
+.taskListWrapper {
+  margin-top: 4rem;
+  width: 100%;
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-bottom: 1.5rem;
+
+    div {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 10px;
+    }
+
+    span {
+      background: var(--gray-400);
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: bold;
+      color: var(--gray-200);
+    }
+  }
+
+  main {
+    .empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      border-top: 1px solid var(--gray-400);
+      border-radius: 8px;
+
+      padding: 4rem 1.5rem;
+    }
+
+    strong {
+      display: block;
+    }
+
+    .emptyText {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.createdTasks {
+  strong {
+    color: var(--blue);
+  }
+}
+
+.completedTasks {
+  strong {
+    color: var(--purple);
+  }
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

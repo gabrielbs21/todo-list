@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 736px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    padding: 1rem;
+  }
+}
